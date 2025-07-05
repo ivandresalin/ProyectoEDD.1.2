@@ -200,7 +200,7 @@ public class ContactoApp extends Application {
             GestorPersistencia.guardarContactos(listaContactos);
         });
 
-        Scene scene = new Scene(root, 600, 640);  // Más ancho para la lista lateral
+        Scene scene = new Scene(root, 760, 640);  // Más ancho para la lista lateral
         primaryStage.setScene(scene);
         primaryStage.setTitle("Agenda Móvil");
         primaryStage.show();
@@ -263,7 +263,6 @@ public class ContactoApp extends Application {
         return box;
     }
 
-
     private VBox crearSeccionContactosRelacionados(String titulo, Contacto contacto) {
     VBox box = new VBox(3);
     Label labelTitulo = new Label(titulo);
@@ -288,7 +287,6 @@ public class ContactoApp extends Application {
 
     return box;
 }
-
 
     private void mostrarFoto(Contacto contacto) {
         if (contacto.getFotos().getTamanio() > 0) {
@@ -431,11 +429,7 @@ public class ContactoApp extends Application {
         e3.addContactoRelacionado(p6);
         
     }
-    
-    
-
-    
-
+       
     private void eliminarContacto() {
         Contacto contacto = listaContactos.getActual();
         if (contacto != null) {

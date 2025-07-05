@@ -221,13 +221,13 @@ public class ContactoEditable {
             btnGuardar, btnCancelar
         );
 
-        formulario.setPrefHeight(1500); // Para activar scroll si es necesario
+        formulario.setPrefHeight(1000); // Para activar scroll si es necesario
 
         ScrollPane scrollPane = new ScrollPane(formulario);
         scrollPane.setFitToWidth(true);
         scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);
 
-        Scene scene = new Scene(scrollPane, 500, 900);
+        Scene scene = new Scene(scrollPane, 380, 600);
         ventanaEditar.setScene(scene);
         ventanaEditar.show();
     }
@@ -313,13 +313,13 @@ public class ContactoEditable {
             btnGuardar, btnCancelar
         );
 
-        formulario.setPrefHeight(1500);
+        formulario.setPrefHeight(900);
 
         ScrollPane scrollPane = new ScrollPane(formulario);
         scrollPane.setFitToWidth(true);
         scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);
 
-        Scene scene = new Scene(scrollPane, 500, 900);
+        Scene scene = new Scene(scrollPane, 380, 600);
         ventanaEditar.setScene(scene);
         ventanaEditar.show();
     }
